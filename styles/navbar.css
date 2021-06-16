@@ -1,0 +1,32 @@
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 1em 0 2em;
+    z-index: 100;
+    color: #fff;
+}
+
+.navbar__links,
+.navbar__user {
+    justify-content: flex-start;
+}
+
+.navbar__links a {
+    margin-left: 1em;
+}
+
+.navbar__links a:last-child {
+    margin-left: 0;
+}
+
+.navbar__user a {
+    margin-right: 1em;
+}
+
+.navbar__user a:first-child {
+    margin-right: 0;
+    margin-left: 2em;
+}

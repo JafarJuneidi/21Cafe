@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font: 'Tajawal', sans-serif;
+}
+
+/* BASE CSS */
+body {
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}

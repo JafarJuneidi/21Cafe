@@ -1,0 +1,34 @@
+footer {
+    height: 40vh;
+    border-top: 1px solid #ddd;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+}
+
+.footer {
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.footer img:first-child {
+    margin-top: 1rem;
+    width: 10%;
+}
+
+.footer__links {
+    width: 100%;
+    padding: 2rem 0 2.5rem;
+}
+
+.footer > *:last-child {
+    display: block;
+    justify-self: flex-end;
+}
+
+.license {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
