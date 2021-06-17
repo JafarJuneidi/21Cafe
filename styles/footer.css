@@ -15,20 +15,50 @@ footer {
 .footer img:first-child {
     margin-top: 1rem;
     width: 10%;
+    width: 70px;
 }
 
 .footer__links {
     width: 100%;
-    padding: 2rem 0 2.5rem;
+    margin: 2rem 0 2.5rem;
+    padding: 0 2rem;
+}
+
+.footer a:hover {
+    color: #bbb;
 }
 
 .footer > *:last-child {
     display: block;
-    justify-self: flex-end;
 }
 
 .license {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 2rem;
+}
+
+.license h6 {
+    color: #bbb;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 1800px) {
+    .footer {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .footer {
+        min-width: 90%;
+    }
+
+    .footer__links {
+        margin: 1rem 0 1rem;
+    }
+
+    .license {
+        margin-bottom: 1rem;
+    }
 }

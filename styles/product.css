@@ -1,0 +1,253 @@
+/* NAVBAR CHANGES */
+.navbar {
+    background-color: #000;
+    position: relative;
+}
+
+/* MAIN */
+.main {
+    height: 95vh;
+    border-bottom: 1px solid #eeefffff;
+}
+
+.main__child {
+    flex: 0 0 50%;
+    height: 100%;
+    width: 50%;
+    padding: 1.5rem;
+}
+
+/* RIGHT */
+.right {
+    padding-left: 2rem;
+}
+
+.right h1 {
+    font-size: 3rem;
+    margin: 0 1rem 1rem 0;
+}
+
+.right p {
+    color: #bbb;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    margin-bottom: 1.5em;
+}
+
+.right h2 {
+    margin-bottom: 0.5rem;
+}
+
+.cards__container {
+    width: 80%;
+    height: 30%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    /* flex */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card h5 {
+    font-weight: lighter;
+}
+
+.card h3 {
+    font-weight: 700;
+}
+
+textarea {
+    width: 80%;
+    height: 25%;
+    resize: none;
+    border: 2px solid #ccc;
+    border-radius: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+/* LEFT */
+.left {
+    /* flex */
+    flex-direction: column;
+    background-color: #eee;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.left i {
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    background-color: #fff;
+    color: #aaa;
+    border-radius: 50%;
+    transform: translateX(50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+.left__img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    margin-top: 3rem;
+    background: url(../images/cake_coffee.png) no-repeat center;
+    background-size: cover;
+}
+
+/* LEFT FOOTER */
+.left__footer {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.left__footer > *:first-child {
+    font-size: 1.2rem;
+}
+
+.left__footer span {
+    float: right;
+    margin-left: 0.2rem;
+    color: #aaa;
+}
+
+.box__container {
+    justify-content: center;
+}
+
+.box {
+    width: 8rem;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.box div {
+    padding: 0 0.5rem;
+    width: 25%;
+}
+
+.box > div:nth-child(2) {
+    width: 50%;
+}
+
+.box > div:first-child,
+.box > div:last-child {
+    cursor: pointer;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+.box > div:first-child {
+    border-left: 1px solid #000;
+}
+
+.box > div:last-child {
+    border-right: 1px solid #000;
+}
+
+.left__btn {
+    background-color: #000;
+    color: #fff;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.left__btn:hover {
+    background-color: #333;
+}
+
+/* BOTTOM */
+.bottom {
+    height: 80vh;
+    justify-content: center;
+}
+
+.bottom__container {
+    width: 70%;
+    height: 60%;
+    background-color: #eee;
+    padding: 1rem 4rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+    /* flex */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom__container h1 {
+    margin-bottom: 2rem;
+}
+
+.bottom__container .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.product {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    font-size: 0.7rem;
+}
+
+.product > *:not(:last-child) {
+    margin-bottom: 0.4rem;
+}
+
+.product > h4 {
+    margin-right: 3%;
+    font-weight: bold;
+}
+
+.product > p {
+    color: #bbb;
+}
+
+.product__background {
+    background: url(../images/coffee_glass.png) no-repeat center;
+    background-size: cover;
+    border-radius: 5%;
+    height: 80%;
+    width: 100%;
+}
+
+.product__footer {
+    width: 100%;
+}
+
+.product__footer h2 {
+    font-weight: lighter;
+}
+
+.product__footer i {
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.product__footer i:hover {
+    color: #bbb;
+}

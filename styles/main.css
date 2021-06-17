@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 *,
 *::before,
 *::after {
@@ -10,11 +9,13 @@
 
 :root {
     --font: 'Tajawal', sans-serif;
+    font-weight: 400;
 }
 
 /* BASE CSS */
 body {
     font-family: var(--font);
+    overflow-y: auto;
 }
 
 a {
