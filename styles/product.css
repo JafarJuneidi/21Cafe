@@ -4,19 +4,6 @@
     position: relative;
 }
 
-/* MAIN */
-.main {
-    height: 95vh;
-    border-bottom: 1px solid #eeefffff;
-}
-
-.main__child {
-    flex: 0 0 50%;
-    height: 100%;
-    width: 50%;
-    padding: 1.5rem;
-}
-
 /* RIGHT */
 .right {
     padding-left: 2rem;
@@ -126,46 +113,10 @@ textarea {
     color: #aaa;
 }
 
-.box__container {
-    justify-content: center;
-}
-
-.box {
-    width: 8rem;
-    border: 1px solid #000;
-    border-radius: 0.5rem;
-    justify-content: center;
-    text-align: center;
-}
-
-.box div {
-    padding: 0 0.5rem;
-    width: 25%;
-}
-
-.box > div:nth-child(2) {
-    width: 50%;
-}
-
-.box > div:first-child,
-.box > div:last-child {
-    cursor: pointer;
-    font-size: 1.5rem;
-    user-select: none;
-}
-
-.box > div:first-child {
-    border-left: 1px solid #000;
-}
-
-.box > div:last-child {
-    border-right: 1px solid #000;
-}
-
+/* NUMBER CONTAINER */
 .left__btn {
     background-color: #000;
     color: #fff;
-    margin-right: 0.5rem;
     border-radius: 0.5rem;
     padding: 0.5rem;
     font-size: 0.9rem;
