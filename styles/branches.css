@@ -1,0 +1,56 @@
+/* NAVBAR CHANGES */
+.navbar {
+    background-color: #000;
+    position: relative;
+}
+
+/* MAIN OVERRIDE*/
+.main__container {
+    width: 60%;
+    margin: auto;
+    padding: 2em 0;
+}
+
+.city__container {
+    margin-bottom: 1em;
+}
+
+.city__container h2 {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.city__branches__container {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.branch {
+    flex-basis: 30%;
+    height: 15em;
+
+    /* FLEX */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.branch__background {
+    background: url(../images/branch.png) no-repeat center;
+    background-size: cover;
+    height: 90%;
+    width: 100%;
+    border-radius: 1em;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.branch h3 {
+    font-weight: 400;
+    margin: 0.5em 0.5em 0 0;
+}
+
+@media screen and (min-width: 1800px) {
+    .main__container {
+        font-size: 1.2rem;
+    }
+}

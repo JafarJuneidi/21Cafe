@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="styles/utilities.css" />
         <link rel="stylesheet" href="styles/navbar.css" />
         <link rel="stylesheet" href="styles/footer.css" />
-        <link rel="stylesheet" href="styles/login.css" />
+        <link rel="stylesheet" href="styles/branches.css" />
 
         <!-- ########################## FontAwesome ########################## -->
         <script src="https://kit.fontawesome.com/392f25fcb3.js" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
             <div class="navbar__links flex">
                 <a href="index.html"><img src="images/logo_nav.png" alt="" /></a>
                 <a href="index.html">الرئيسية</a>
-                <a href="product.html">القائمة</a>
+                <a href="menu.html">القائمة</a>
                 <a href="branches.html">الفروع</a>
                 <a href="#">من نحن</a>
                 <a href="#">التطبيق</a>
@@ -40,34 +40,33 @@
             </div>
         </div>
 
-        <section class="main__container flex">
-            <div class="main__container__child right flex">
-                <form class="form login flex">
-                    <h1>تسجيل الدخول</h1>
-                    <label for="email">البريد الالكتروني</label>
-                    <input type="text" name="email" id="email" class="input_box" />
-                    <label for="password">كلمة المرور</label>
-                    <input type="text" name="password" id="password" class="input_box" />
-                    <input type="submit" value="تسجيل الدخول" class="black_btn" />
-                    <a href="#" class="forgot">نسيت كلمة المرور</a>
-                    <div class="blue_btn">
-                        <span>Continue with Facebook</span>
-                        <i class="fab fa-facebook-f"></i>
+        <section class="main__container">
+            <div class="city__container">
+                <h2>الخليل</h2>
+                <div class="city__branches__container flex">
+                    <div class="branch flex">
+                        <div class="branch__background"></div>
+                        <h3>فرع الحرس</h3>
                     </div>
-                </form>
+                    <div class="branch flex">
+                        <div class="branch__background"></div>
+                        <h3>فرع الحرس</h3>
+                    </div>
+                    <div class="branch flex">
+                        <div class="branch__background"></div>
+                        <h3>فرع الحرس</h3>
+                    </div>
+                </div>
             </div>
 
-            <div class="main__container__child left flex">
-                <form class="form login flex">
-                    <h1>أنشئ حساب جديد</h1>
-                    <label for="name">الاسم الكامل</label>
-                    <input type="text" name="name" id="name" class="input_box" />
-                    <label for="email">البريد الالكتروني</label>
-                    <input type="text" name="email" id="email" class="input_box" />
-                    <label for="password">كلمة المرور</label>
-                    <input type="text" name="password" id="password" class="input_box" />
-                    <input type="submit" value="أنشئ حسابا" class="black_btn" />
-                </form>
+            <div class="city__container">
+                <h2>رام الله</h2>
+                <div class="city__branches__container flex">
+                    <div class="branch flex">
+                        <div class="branch__background"></div>
+                        <h3>فرع الحرس</h3>
+                    </div>
+                </div>
             </div>
         </section>
 
