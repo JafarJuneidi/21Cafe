@@ -6,38 +6,38 @@
 
 /* RIGHT */
 .right {
-    padding-left: 2rem;
+    padding-left: 2em;
 }
 
 .right h1 {
-    font-size: 3rem;
-    margin: 0 1rem 1rem 0;
+    font-size: 3em;
+    margin: 0 0.5em 0.5em 0;
 }
 
 .right p {
     color: #bbb;
     font-weight: lighter;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     margin-bottom: 1.5em;
 }
 
 .right h2 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
 }
 
 .cards__container {
     width: 80%;
     height: 30%;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
-    margin-bottom: 1rem;
+    grid-gap: 1em;
+    margin-bottom: 1em;
 }
 
 .card {
     width: 100%;
     height: 100%;
     background-color: #eee;
-    border-radius: 0.5rem;
+    border-radius: 0.5em;
     cursor: pointer;
 
     /* flex */
@@ -62,9 +62,9 @@ textarea {
     height: 25%;
     resize: none;
     border: 2px solid #ccc;
-    border-radius: 1rem;
+    border-radius: 1em;
     outline: none;
-    padding: 1rem;
+    padding: 1em;
 }
 
 /* LEFT */
@@ -79,7 +79,7 @@ textarea {
 .left i {
     position: absolute;
     right: 0;
-    padding: 1rem;
+    padding: 0.5em;
     background-color: #fff;
     color: #aaa;
     border-radius: 50%;
@@ -89,10 +89,10 @@ textarea {
 }
 
 .left__img {
-    width: 30rem;
-    height: 30rem;
+    width: 30em;
+    height: 30em;
     border-radius: 50%;
-    margin-top: 3rem;
+    margin-top: 10%;
     background: url(../images/cake_coffee.png) no-repeat center;
     background-size: cover;
 }
@@ -100,16 +100,16 @@ textarea {
 /* LEFT FOOTER */
 .left__footer {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .left__footer > *:first-child {
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .left__footer span {
     float: right;
-    margin-left: 0.2rem;
+    margin-left: 0.2em;
     color: #aaa;
 }
 
@@ -117,9 +117,9 @@ textarea {
 .left__btn {
     background-color: #000;
     color: #fff;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    font-size: 0.9rem;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 0.9em;
     cursor: pointer;
 }
 
@@ -137,8 +137,8 @@ textarea {
     width: 70%;
     height: 60%;
     background-color: #eee;
-    padding: 1rem 4rem 2rem;
-    border-radius: 1rem;
+    padding: 1em 4em 2em;
+    border-radius: 1em;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
     /* flex */
@@ -147,12 +147,12 @@ textarea {
 }
 
 .bottom__container h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 
 .bottom__container .grid {
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 2em;
     height: 100%;
     width: 100%;
 }
@@ -162,11 +162,11 @@ textarea {
     align-items: flex-start;
     justify-content: center;
     height: 100%;
-    font-size: 0.7rem;
+    font-size: 0.7em;
 }
 
 .product > *:not(:last-child) {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.4em;
 }
 
 .product > h4 {
@@ -201,4 +201,10 @@ textarea {
 
 .product__footer i:hover {
     color: #bbb;
+}
+
+@media screen and (min-width: 1800px) {
+    .bottom {
+        font-size: 1.2rem;
+    }
 }

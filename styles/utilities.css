@@ -58,3 +58,9 @@
 .item_number > div:last-child {
     border-right: 1px solid #000;
 }
+
+@media screen and (min-width: 1800px) {
+    .main__container {
+        font-size: 1.2rem;
+    }
+}

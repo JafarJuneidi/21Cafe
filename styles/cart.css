@@ -11,7 +11,7 @@
 }
 
 .right h1 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     margin: 0 2rem 1rem 0;
 }
 
@@ -62,7 +62,7 @@
 
 .card__text p {
     color: #ccc;
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 
 .card__footer {
@@ -97,20 +97,20 @@
 .item_number > div:first-child,
 .item_number > div:last-child {
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1em;
     user-select: none;
     border-color: currentColor;
 }
 
 .item_number__container h3 {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .item_number__container span {
     color: #ccc;
-    font-size: 1.5rem;
-    margin-left: 0.2rem;
+    font-size: 1em;
+    margin-left: 0.2em;
 }
 
 /* LEFT */
@@ -122,7 +122,7 @@
 
 .form__delivery {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     height: 100%;
     width: 100%;
@@ -198,6 +198,7 @@
 }
 .form__footer {
     width: 100%;
+    margin-top: 1rem;
 }
 
 .form__footer div {
@@ -214,11 +215,21 @@
 
 .form__footer h3 {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .form__footer span {
     color: #ccc;
-    font-size: 1.5rem;
+    font-size: 1em;
     margin-left: 0.2rem;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+@media screen and (min-width: 1800px) {
+    .main__container {
+        font-size: 1.2rem;
+    }
 }
