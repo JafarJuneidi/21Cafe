@@ -282,3 +282,9 @@
         }
     }
 }
+
+@media screen and (min-width: 1800px) {
+    .main {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,145 @@
+/* NAVBAR CHANGES */
+.navbar {
+    background-color: #000;
+    position: relative;
+}
+
+/* main */
+.main {
+    width: 100%;
+}
+
+/* Cup slider */
+.main__cups {
+    height: 30vh;
+    width: 100%;
+    background-color: #000;
+    overflow-x: scroll;
+    color: #fff;
+    padding: 0 2em;
+
+    /* scrollbar */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.main__cups::-webkit-scrollbar {
+    display: none;
+}
+
+.cup__container {
+    box-sizing: border-box;
+    height: 80%;
+    /* width: 8%; */
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1%;
+    flex-basis: 8%;
+    flex-shrink: 0;
+}
+
+.cup__background {
+    background: url(../images/coffee_cup.png) no-repeat center;
+    background-size: cover;
+    height: 60%;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.cup__container h4 {
+    font-weight: normal;
+    margin-top: 1em;
+    opacity: 0.6;
+    transition: 0.2s ease-out;
+}
+
+.cup__container:hover h4 {
+    opacity: 1;
+    font-weight: bold;
+}
+
+/* PRODUCTS */
+.main__products {
+    /* height: 100vh; */
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.main__products .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 45%);
+    grid-gap: 1em;
+    width: 70%;
+    /* height: 90%; */
+    overflow-y: auto;
+
+    /* scrollbar */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.main__products .grid::-webkit-scrollbar {
+    display: none;
+}
+
+.product {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.product > *:not(:last-child) {
+    margin-bottom: 0.4em;
+}
+
+.product > h4 {
+    margin-right: 3%;
+    font-weight: bold;
+}
+
+.product > p {
+    color: #bbb;
+}
+
+.product__background {
+    background: url(../images/coffee_glass.png) no-repeat center;
+    background-size: cover;
+    border-radius: 5%;
+    /* height: 70%; */
+    height: 25vh;
+    width: 100%;
+}
+
+.product__footer {
+    width: 100%;
+}
+
+.product__footer h2 {
+    font-weight: lighter;
+}
+
+.product__footer i {
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.product__footer i:hover {
+    color: #bbb;
+}
+
+@media screen and (max-width: 880px) {
+    .main__products .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12, 45%);
+    }
+
+    .cup__container {
+        flex-basis: 15%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .main {
+        font-size: 1.2rem;
+    }
+}
