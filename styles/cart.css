@@ -115,7 +115,7 @@
 
 /* LEFT */
 .left {
-    background-color: #eee;
+    background-color: #f6f6f6;
     padding-right: 5rem;
     padding-left: 8rem;
 }
@@ -137,18 +137,17 @@
     margin-bottom: 0.5rem;
 }
 
-.form__delivery input {
-    width: 100%;
-    height: 6%;
+/* .form__delivery input {
+    
 }
 
-.box {
+.input_box {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 0.5rem;
     outline: none;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.11);
-}
+} */
 
 .coupon__container {
     width: 100%;
@@ -162,16 +161,9 @@
     margin-left: 1rem;
 }
 
-.coupon__container div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.check_coupon {
     flex-basis: 15%;
     height: 95%;
-    border-radius: 5px;
-    background-color: #000;
-    color: #fff;
 }
 
 .radio__container {
@@ -202,15 +194,8 @@
 }
 
 .form__footer div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
     flex-basis: 25%;
     height: 100%;
-    border-radius: 5px;
-    background-color: #000;
-    color: #fff;
 }
 
 .form__footer h3 {
@@ -222,10 +207,6 @@
     color: #ccc;
     font-size: 1em;
     margin-left: 0.2rem;
-}
-
-.btn:hover {
-    background-color: #333;
 }
 
 @media screen and (min-width: 1800px) {

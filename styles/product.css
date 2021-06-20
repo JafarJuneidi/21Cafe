@@ -71,7 +71,7 @@ textarea {
 .left {
     /* flex */
     flex-direction: column;
-    background-color: #eee;
+    background-color: #f6f6f6;
     position: relative;
     padding-bottom: 0;
 }
@@ -114,18 +114,7 @@ textarea {
 }
 
 /* NUMBER CONTAINER */
-.left__btn {
-    background-color: #000;
-    color: #fff;
-    border-radius: 0.5em;
-    padding: 0.5em;
-    font-size: 0.9em;
-    cursor: pointer;
-}
-
-.left__btn:hover {
-    background-color: #333;
-}
+/* In utilities */
 
 /* BOTTOM */
 .bottom {

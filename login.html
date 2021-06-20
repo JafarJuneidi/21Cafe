@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ########################## STYLESHEET ########################## -->
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/utilities.css" />
+        <link rel="stylesheet" href="styles/navbar.css" />
+        <link rel="stylesheet" href="styles/footer.css" />
+        <link rel="stylesheet" href="styles/login.css" />
+
+        <!-- ########################## FontAwesome ########################## -->
+        <script src="https://kit.fontawesome.com/392f25fcb3.js" crossorigin="anonymous"></script>
+
+        <title>21 Cafe</title>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <div class="navbar flex">
+            <a href="index.html"><img src="images/logo_nav.png" alt="" /></a>
+            <div class="navbar__links flex">
+                <a href="index.html"><img src="images/logo_nav.png" alt="" /></a>
+                <a href="index.html">الرئيسية</a>
+                <a href="product.html">القائمة</a>
+                <a href="#">الفروع</a>
+                <a href="#">من نحن</a>
+                <a href="#">التطبيق</a>
+                <a href="#">الوكالات</a>
+                <a href="#">الوظائف</a>
+                <a href="#">اتصل بنا</a>
+            </div>
+            <div class="navbar__user flex">
+                <a href="#">عربي | English</a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="login.html">أنشئ حساب</a>
+                <a href="login.html">تسجيل الدخول</a>
+            </div>
+        </div>
+
+        <section class="main__container flex">
+            <div class="main__container__child right flex">
+                <form class="form login flex">
+                    <h1>تسجيل الدخول</h1>
+                    <label for="email">البريد الالكتروني</label>
+                    <input type="text" name="email" id="email" class="input_box" />
+                    <label for="password">كلمة المرور</label>
+                    <input type="text" name="password" id="password" class="input_box" />
+                    <input type="submit" value="تسجيل الدخول" class="black_btn" />
+                    <a href="#" class="forgot">نسيت كلمة المرور</a>
+                    <div class="blue_btn">
+                        <span>Continue with Facebook</span>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </form>
+            </div>
+
+            <div class="main__container__child left flex">
+                <form class="form login flex">
+                    <h1>أنشئ حساب جديد</h1>
+                    <label for="name">الاسم الكامل</label>
+                    <input type="text" name="name" id="name" class="input_box" />
+                    <label for="email">البريد الالكتروني</label>
+                    <input type="text" name="email" id="email" class="input_box" />
+                    <label for="password">كلمة المرور</label>
+                    <input type="text" name="password" id="password" class="input_box" />
+                    <input type="submit" value="أنشئ حسابا" class="black_btn" />
+                </form>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="flex">
+            <div class="footer flex">
+                <img src="images/logo_footer.png" alt="" />
+                <div class="footer__links flex">
+                    <a href="#">الرئيسية</a>
+                    <a href="#">القائمة</a>
+                    <a href="#">الفروع</a>
+                    <a href="#">من نحن</a>
+                    <a href="#">التطبيق</a>
+                    <a href="#">الوكالات</a>
+                    <a href="#">الوظائف</a>
+                    <a href="#">اتصل بنا</a>
+                </div>
+                <div class="license flex">
+                    <a href="#">سياسة الخصوصية | الاحكام و الشروط</a>
+                    <h6>جميع الحقوق محفوظة</h6>
+                </div>
+                <img src="images/planb.png" alt="" />
+            </div>
+        </footer>
+        <script src="cart.js"></script>
+    </body>
+</html>

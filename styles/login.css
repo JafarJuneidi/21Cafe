@@ -1,0 +1,83 @@
+/* NAVBAR CHANGES */
+.navbar {
+    background-color: #000;
+    position: relative;
+}
+
+/* RIGHT & LEFT colums */
+.right,
+.left {
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background-color: #f6f6f6;
+}
+
+/* FORMS */
+.form {
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 55%;
+}
+
+.form label {
+    align-self: flex-start;
+    font-weight: 400;
+}
+
+/* INPUT BOX OVERRIDE */
+.input_box {
+    height: 10%;
+}
+
+/* BLACK_BTN OVERRIDE */
+.black_btn {
+    width: 40%;
+    height: 10%;
+    border: none;
+    margin: 0.5em 0;
+    font-weight: 500;
+}
+
+.left .black_btn {
+    margin-top: 2em;
+}
+
+/* BLUE BTN */
+.blue_btn {
+    margin-top: 2em;
+    background-color: #4267b2;
+    padding: 0.3em;
+    border-radius: 0.2em;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.blue_btn:hover {
+    background-color: #5b78b3;
+}
+
+.blue_btn i {
+    padding: 0.1em 0.3em;
+    margin-right: 0.5em;
+    background-color: #fff;
+    color: #4267b2;
+    border-radius: 0.1em;
+}
+
+.forgot:hover {
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 1800px) {
+    .main__container {
+        font-size: 1.2rem;
+    }
+}
