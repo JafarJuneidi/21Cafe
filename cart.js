@@ -10,7 +10,7 @@ for (let i = 0; i < plus.length; i++) {
     });
 
     minus[i].addEventListener('click', () => {
-        if (parseInt(number[i].innerHTML) > 0) {
+        if (parseInt(number[i].innerHTML) > 1) {
             number[i].innerHTML = parseInt(number[i].innerHTML) - 1;
         }
     });

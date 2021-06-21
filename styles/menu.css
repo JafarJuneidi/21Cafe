@@ -143,3 +143,14 @@
         font-size: 1.2rem;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .main__products .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(24, 45%);
+    }
+
+    .cup__container {
+        flex-basis: 35%;
+    }
+}

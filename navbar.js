@@ -7,9 +7,7 @@ burger.addEventListener('click', () => {
 
     if (display === 'flex') {
         navbarLinks[0].style.display = 'none';
-        burger.classList.remove('burger_fixed');
     } else {
         navbarLinks[0].style.display = 'flex';
-        burger.classList.add('burger_fixed');
     }
 });

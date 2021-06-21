@@ -15,7 +15,7 @@ footer {
 .footer img:first-child {
     margin-top: 1.5em;
     width: 10%;
-    width: 120px;
+    min-width: 5em;
 }
 
 .footer__links {
@@ -70,6 +70,16 @@ footer {
 
     .footer__links {
         margin: 0;
-        padding: 0;
+        padding: 0 0.5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer img:first-child {
+        margin-top: 0.3em;
+    }
+
+    .footer__links {
+        font-size: 0.7rem;
     }
 }

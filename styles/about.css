@@ -169,3 +169,31 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 0.6em;
+    }
+
+    .main__hero h1 {
+        margin-bottom: 0.2em;
+    }
+
+    .main__stats,
+    .main__info {
+        width: 95%;
+    }
+
+    .stats__images__container {
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .main__backgrounds {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nope {
+        display: none;
+    }
+}

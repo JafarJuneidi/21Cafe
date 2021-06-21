@@ -220,4 +220,14 @@
     .card__container {
         height: 10em;
     }
+
+    .visa__background {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card__container {
+        height: 7em;
+    }
 }

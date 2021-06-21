@@ -8,7 +8,7 @@ plus.addEventListener('click', () => {
 });
 
 minus.addEventListener('click', () => {
-    if (parseInt(number.innerHTML) > 0) {
+    if (parseInt(number.innerHTML) > 1) {
         number.innerHTML = parseInt(number.innerHTML) - 1;
     }
 });
