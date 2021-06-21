@@ -50,7 +50,7 @@
     /* FLEX */
     flex-direction: column;
     align-items: flex-start;
-    width: 35%;
+    width: 21em;
     height: 30%;
 }
 
@@ -71,16 +71,17 @@
 }
 
 .app_store {
-    width: 45%;
-    height: 100%;
     background: url(../images/app_store.png) no-repeat center;
-    background-size: cover;
 }
 
 .google_play {
-    width: 45%;
-    height: 100%;
     background: url(../images/google_play.png) no-repeat center;
+}
+
+.app_store,
+.google_play {
+    width: 10em;
+    height: 100%;
     background-size: cover;
 }
 
@@ -99,5 +100,41 @@
 @media screen and (min-width: 1800px) {
     .main__container {
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main__container {
+        font-size: 0.8rem;
+        height: 90vh;
+    }
+
+    .inner__container {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .main__lower {
+        width: 100%;
+    }
+
+    .stores {
+        justify-content: center;
+    }
+
+    .app_store,
+    .google_play {
+        width: 12em;
+        margin: 0 1em;
+    }
+
+    .youtube {
+        width: 15em;
+        margin: auto;
     }
 }

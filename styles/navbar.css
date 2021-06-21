@@ -10,13 +10,26 @@
     text-align: center;
 }
 
-.navbar > a {
+#burger {
     display: none;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+
+    background-color: #000;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    padding: 0.5em;
+
+    margin: 0 1em;
+    cursor: pointer;
+    z-index: 100;
 }
 
 .navbar__links a:not(:first-child) {
     border-bottom: 2px solid transparent;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.5em;
 }
 
 .navbar__links a:not(:first-child):hover {
@@ -30,11 +43,11 @@
 }
 
 .navbar__links a {
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 .navbar__links a:first-child {
-    margin-left: 2rem;
+    margin-left: 2em;
 }
 
 .navbar__links a:last-child {
@@ -42,12 +55,12 @@
 }
 
 .navbar__user a {
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 
 .navbar__user a:first-child {
     margin-right: 0;
-    margin-left: 2rem;
+    margin-left: 2em;
 }
 
 .navbar__user a:hover {
@@ -56,11 +69,11 @@
 }
 
 .navbar__user a:nth-last-child(2) {
-    padding: 0.5rem 2rem;
+    padding: 0.5em 2em;
     background-color: #fff;
     color: #000;
     border: 1px solid #fff;
-    border-radius: 1.5rem;
+    border-radius: 1.5em;
 }
 
 .navbar__user a:nth-last-child(2):hover {
@@ -69,8 +82,12 @@
 }
 
 @media screen and (min-width: 1800px) {
-    .navbar a {
-        font-size: 1.2rem;
+    .navbar {
+        font-size: 1.3rem;
+    }
+
+    /* .navbar a {
+        font-size: 1.2em;
     }
 
     .navbar__links a {
@@ -92,15 +109,39 @@
 
     .navbar__user a:nth-last-child(2) {
         padding: 0.75rem 2.75rem;
-    }
+    } */
 }
 
 @media screen and (max-width: 1100px) {
+    .navbar {
+        justify-content: flex-end;
+    }
+
     .navbar__links {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 10em;
+        background-color: #fff;
+        color: black;
+        border-left: 1px solid #ccc;
+    }
+
+    .navbar__links > a:first-child {
         display: none;
     }
 
-    .navbar > a {
-        display: block;
+    .navbar__links a {
+        margin: 1em 0;
+    }
+
+    #burger {
+        display: inline-block;
     }
 }

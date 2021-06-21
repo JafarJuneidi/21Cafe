@@ -51,7 +51,7 @@ footer {
 
 @media screen and (max-width: 880px) {
     .footer {
-        min-width: 90%;
+        width: 90%;
     }
 
     .footer__links {
@@ -60,5 +60,16 @@ footer {
 
     .license {
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        width: 100%;
+    }
+
+    .footer__links {
+        margin: 0;
+        padding: 0;
     }
 }

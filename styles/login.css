@@ -81,3 +81,26 @@
         font-size: 1.2rem;
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .form {
+        width: 20em;
+        height: 100%;
+    }
+
+    .black_btn {
+        width: 10em;
+    }
+
+    .form {
+        margin: 2em 0;
+    }
+
+    .form label {
+        margin-bottom: 0.5em;
+    }
+
+    .input_box {
+        margin-bottom: 1em;
+    }
+}

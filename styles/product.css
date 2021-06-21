@@ -197,3 +197,40 @@ textarea {
         font-size: 1.2rem;
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .left i {
+        right: 10%;
+    }
+
+    .cards__container {
+        height: 12em;
+    }
+
+    .left__img {
+        margin-top: 0;
+        width: 25em;
+        height: 25em;
+    }
+
+    .left__footer {
+        margin-top: 1em;
+    }
+
+    .bottom {
+        height: 100vh;
+    }
+
+    .bottom__container {
+        height: 90%;
+        width: 90%;
+    }
+
+    .bottom__container .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 2em;
+        height: 100%;
+        width: 100%;
+    }
+}

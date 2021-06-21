@@ -6,6 +6,8 @@
 
 /* MAIN OVERRIDE*/
 .main__container {
+    height: auto;
+    min-height: 90vh;
     width: 60%;
     margin: auto;
     padding: 2em 0;
@@ -26,8 +28,10 @@
 }
 
 .branch {
-    flex-basis: 30%;
+    flex-basis: 18em;
+    flex-grow: 0;
     height: 15em;
+    margin-bottom: 1em;
 
     /* FLEX */
     flex-direction: column;

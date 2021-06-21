@@ -205,34 +205,6 @@
     color: #bbb;
 }
 
-/* .product__add {
-    height: 80%;
-    width: 10%;
-    background-color: black;
-    position: relative;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 0.2rem;
-}
-
-.product__add__btn {
-    width: 70%;
-    height: 10%;
-    border-radius: 20px;
-    background-color: #fff;
-}
-
-.product__add__btn::before {
-    content: '';
-    display: block;
-    width: 90%;
-    height: 100%;
-    border-radius: 20px;
-    background-color: #fff;
-    transform-origin: center;
-    transform: rotate(90deg) translateY(25%);
-} */
-
 @media screen and (max-width: 880px) {
     .main__products .grid {
         grid-template-columns: repeat(2, 1fr);
@@ -240,11 +212,15 @@
     }
 
     .cup__container {
-        flex-basis: 15%;
+        flex-basis: 20%;
+    }
+
+    .main__products .grid {
+        width: 80%;
     }
 
     .main__quote div {
-        width: 50%;
+        width: 75%;
     }
 
     .main__hero img {

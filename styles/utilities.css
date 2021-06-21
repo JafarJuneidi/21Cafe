@@ -92,3 +92,17 @@
         font-size: 1.2rem;
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .main__container {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right,
+    .left {
+        width: 100%;
+        height: auto;
+    }
+}
