@@ -3,6 +3,9 @@ const minus = document.getElementsByClassName('minus');
 const number = document.getElementsByClassName('number');
 const cardDelete = document.getElementsByClassName('fa-times-circle');
 const card = document.getElementsByClassName('card__container');
+const popUp = document.getElementsByClassName('pop_up');
+const yes = document.getElementsByClassName('yes');
+const no = document.getElementsByClassName('no');
 
 for (let i = 0; i < plus.length; i++) {
     plus[i].addEventListener('click', () => {
@@ -17,8 +20,24 @@ for (let i = 0; i < plus.length; i++) {
 }
 
 for (let i = 0; i < cardDelete.length; i++) {
-    cardDelete[i].addEventListener('click', () => {
-        card[i].style.display = 'none';
+    cardDelete[i].addEventListener('click', async () => {
+        let press = new Promise((resolve, reject) => {
+            yes[0].addEventListener('click', () => {
+                resolve(true);
+            });
+
+            no[0].addEventListener('click', () => {
+                resolve(false);
+            });
+        });
+
+        popUp[0].style.display = 'flex';
+        const result = await press;
+
+        if (result) {
+            card[i].style.display = 'none';
+        }
+        popUp[0].removeAttribute('style');
     });
 }
 

@@ -14,7 +14,7 @@
 #burger {
     display: none;
     position: fixed;
-    top: 0.5%;
+    top: 1vh;
     right: 1.5%;
 
     background-color: #000;

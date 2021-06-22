@@ -247,3 +247,31 @@
         margin: 0;
     }
 }
+
+.pop_up {
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: #bbb;
+    width: 15em;
+    height: 5em;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    border-radius: 1em;
+}
+
+.pop_up p {
+    text-align: center;
+}
+
+.pop_up > div {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.pop_up .black_btn {
+    flex-basis: 7em;
+}
