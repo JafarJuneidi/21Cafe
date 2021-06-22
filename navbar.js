@@ -6,7 +6,7 @@ burger.addEventListener('click', () => {
     const display = navbarLinks[0].style.display;
 
     if (display === 'flex') {
-        navbarLinks[0].style.display = 'none';
+        navbarLinks[0].removeAttribute('style');
     } else {
         navbarLinks[0].style.display = 'flex';
     }

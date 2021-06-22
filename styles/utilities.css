@@ -18,7 +18,7 @@
     /* flex: 0 0 50%; */
     height: 100%;
     width: 50%;
-    padding: 1.5rem;
+    padding: 1.5em;
 }
 
 /* ITEM NUMBER */
@@ -27,16 +27,16 @@
 }
 
 .item_number {
-    width: 8rem;
-    margin-left: 0.5rem;
+    width: 8em;
+    margin-left: 0.5em;
     border: 1px solid #000;
-    border-radius: 0.5rem;
+    border-radius: 0.5em;
     justify-content: center;
     text-align: center;
 }
 
 .item_number div {
-    padding: 0 0.5rem;
+    padding: 0 0.5em;
     width: 25%;
 }
 
@@ -104,5 +104,11 @@
     .left {
         width: 100%;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .main__container__child {
+        padding: 0.5em;
     }
 }

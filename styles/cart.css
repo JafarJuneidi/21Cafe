@@ -12,7 +12,7 @@
 
 .right h1 {
     font-size: 2.5em;
-    margin: 0 2rem 1rem 0;
+    margin: 0 2em 1em 0;
 }
 
 /* RIGHT SLIDER */
@@ -83,8 +83,8 @@
 
 /* ITEM NUMBER OVERRIDES */
 .item_number {
-    width: 7rem;
-    margin-left: 2rem;
+    width: 7em;
+    margin-left: 2em;
     color: #bbb;
     border-color: currentColor;
 }
@@ -179,13 +179,14 @@
 
 .visa__background {
     background: url(../images/visa.png) no-repeat center;
-    width: 30%;
+    background-size: cover;
+    width: 8em;
     height: 100%;
 }
 
 .radio__container input {
-    height: 100%;
-    width: auto;
+    height: 1em;
+    width: 1em;
     margin-left: 1rem;
 }
 .form__footer {
@@ -220,14 +221,29 @@
     .card__container {
         height: 10em;
     }
-
-    .visa__background {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 600px) {
     .card__container {
         height: 7em;
+    }
+    .visa__background {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .left {
+        padding: 1em;
+    }
+
+    .item_number {
+        width: 6em;
+        margin-left: 1em;
+    }
+
+    .right h1 {
+        font-size: 2em;
+        margin: 0;
     }
 }

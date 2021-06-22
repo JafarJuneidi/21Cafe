@@ -5,9 +5,9 @@
 }
 
 /* RIGHT */
-.right {
+/* .right {
     padding-left: 2em;
-}
+} */
 
 .right h1 {
     font-size: 3em;
@@ -238,6 +238,46 @@ textarea {
 @media screen and (max-width: 600px) {
     .cards__container {
         height: 12em;
+        width: 100%;
+        grid-gap: 0.5em;
+    }
+
+    .left__img {
+        margin-top: 0;
+        width: 20em;
+        height: 20em;
+    }
+
+    .bottom {
+        height: 160vh;
+    }
+
+    .bottom__container {
+        height: 90%;
+        width: 90%;
+        padding: 0.5em 2em;
+    }
+
+    .bottom__container h1 {
+        font-size: 1rem;
+    }
+
+    .bottom__container .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 2em;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .main__container {
+        font-size: 0.8rem;
+    }
+
+    .cards__container {
+        height: 8em;
         width: 100%;
         grid-gap: 0.5em;
     }

@@ -8,19 +8,20 @@
     z-index: 100;
     color: #fff;
     text-align: center;
+    user-select: none;
 }
 
 #burger {
     display: none;
     position: fixed;
-    top: 1%;
-    right: 1%;
+    top: 0.5%;
+    right: 1.5%;
 
     background-color: #000;
     border-radius: 50%;
-    height: 2em;
-    width: 2em;
-    padding: 0.5em;
+    height: 1.5em;
+    width: 1.5em;
+    padding: 0.3em;
 
     margin: 0 1em;
     cursor: pointer;
@@ -131,7 +132,8 @@
         position: fixed;
         right: 0;
         top: 0;
-        width: 10em;
+        width: 8em;
+        padding-top: 10%;
         background-color: #fff;
         color: black;
         border-left: 1px solid #ccc;
@@ -152,6 +154,12 @@
 
 @media screen and (max-width: 600px) {
     .navbar__user a:first-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navbar__user > a:last-child {
         display: none;
     }
 }

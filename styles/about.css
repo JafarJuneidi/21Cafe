@@ -197,3 +197,9 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .main {
+        font-size: 0.725rem;
+    }
+}
